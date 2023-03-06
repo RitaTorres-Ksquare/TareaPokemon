@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       
+      body {
+        width: 100%;
+        height: 550px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80px auto 20px;
+        grid-template-areas:
+          "titulo titulo titulo"
+          "principal principal principal "
+          "footer footer footer";
+      }
+     
+      .noSpace{
+        margin: 0%;
+        padding: 0%;
+      }
+      
+    
+
+      header {
+        grid-area: titulo;
+        margin: 0px;
+        background-color: #95e0ba;
+        margin-top: 10px;
+      }
+      .titulo{
+        margin-left: 1%;
+        margin-top: 1%;
+      }
+     
+
+      main {
+        grid-area: principal;
+        display: flex;
+        background-color: #95e0ba;
+      }
+
+      footer {
+        grid-area: footer;
+        background-color: #95e0ba;
+        height: 100px;
+      }
+
+      .blanco {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+      }
+      .bigBlanco {
+        color: white;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 2px black;
+      }
+      .info {
+        width: 20%;
+        margin-top: 150px;
+        margin-left: 2.5%;
+        height: 350px;
+      }
+
+      .info p{
+        font-size: 12px;
+      }
+
+      .voltear{
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        writing-mode: vertical-rl;
+        
+        
+      }
+
+      .imagen {
+        width: 55%;
+        height: 500px;
+        position:relative;
+        display:inline-block;
+      }
+
+      .nombre{
+        margin-top: 60px;
+        position:absolute;
+        font-size: 80px;
+        font-family:fantasy;
+        color:lightseagreen;
+        
+       
+      }
+
+      .bulbasaur{
+        margin-left: 200px;
+        margin-top: 100px; 
+      }
+
+      .basedatos {
+        margin-top: 100px;
+        width: 25%;
+      }
+
+      .basedatos h2 {
+        margin-left: 24px;
+      }
+      .imagenes{
+        background-color: white;
+        border-radius: 100%;
+        padding:5px;
+        margin-left: 24px;
+      }
+      
+
+
+      .boton {
+        background-color: white;
+        border-radius: 10px;
+        font-size: 10px;
+        padding: 4px 12px 4px 12px;
+        margin: 8px;
+        display: inline-block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .botones {
+        width: 90%;
+        height: 20%;
+        margin-left: 24px;
+        border-width: 2px;
+        border-left: white solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="titulo">
+        <p class="blanco noSpace">#001</p>
+        <h2 class="bigBlanco noSpace">Bulbasaur</h2>
+      </section>
+    </header>
+    <main>
+      <section class="info">
+        <p class="blanco">height:0.7</p>
+        <p class="blanco">Weigth:6.9kg</p>
+
+        
+      </section>
+      <section class="imagen">
+        <p class="nombre">フシギダネ</p>
+        <img
+          src="https://maurowernly.github.io/Pokedex/images/pokemons/001Bulbasaur.png" width="200px" class="bulbasaur"
+        />
+      </section>
+      <section class="basedatos">
+        <section class="simbolos">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dffvl0s-d443a3b4-fa4e-47a6-99b4-d2a769785614.png/v1/fill/w_1280,h_1280,strp/grass_type_symbol_galar_by_jormxdos_dffvl0s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZmdmwwcy1kNDQzYTNiNC1mYTRlLTQ3YTYtOTliNC1kMmE3Njk3ODU2MTQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6-S1a0_YYhlP6eXW5QqrJk4jtv6b5a3MRuugxqhJ6EA" width="50px" class="imagenes">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg"  width="50px" class="imagenes">
+        </section>
+        <h2 class="bigBlanco">Base stats:</h2>
+        <section class="botones">
+          <a class="boton">HP:  45</a>
+          <a class="boton">ATTACK:  49</a>
+          <a class="boton">DEFENSE:  49</a>
+          <a class="boton">SP.ATTACK:  65</a>
+          <a class="boton">SP.DEFENSE:  65</a>
+          <a class="boton">SPEED:  45</a>
+        </section>
+      </section>
+    </main>
+    <footer>
+        <p class="voltear">Region:Kanto</p>
+    </footer>
+  </body>
+</html>
